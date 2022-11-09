@@ -19,7 +19,7 @@ searchInputEl.addEventListener('blur', function(){
 const badgeEl = document.querySelector('header .badges');
 
 window.addEventListener('scroll', _.throttle(function() {
-  console.log(window.scrollY);
+  console.log(window.scrollY);    
   if (window.scrollY > 500) {
     //배지 숨기기
     //badgeEl.style.display = 'none';  //v1 이렇게도 가능
@@ -38,3 +38,13 @@ window.addEventListener('scroll', _.throttle(function() {
   }
 }, 300));
 // _.throttle(함수, 시간)
+
+
+const fadeEls = document.querySelectorAll('.visual .fade-in');
+fadeEls.forEach(fucntion(fadeEl, index){
+  // gsap.to(요소, 지속시간, 옵션(css속성:값))
+  gsap.to(fadeEl, 1, {
+    delay: (index+1) * .7,
+    opacity: 1
+  });
+});
