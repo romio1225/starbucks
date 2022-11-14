@@ -40,7 +40,7 @@ window.addEventListener('scroll', _.throttle(function() {
 // _.throttle(함수, 시간)
 
 
-<<<<<<< HEAD
+// <<<<<<< HEAD
 const fadeEls = document.querySelectorAll('.visual .fade-in');
 fadeEls.forEach(function(fadeEl, index){
   // gsap.to(요소, 지속시간, 옵션(css속성:값))
@@ -121,7 +121,7 @@ floatingObject('.floating2', .5, 15);
 floatingObject('.floating3', 1.5, 20);
 
 
-=======
+// =======
 // const fadeEls = document.querySelectorAll('.visual .fade-in');
 // fadeEls.forEach(fucntion(fadeEl, index){
 //   // gsap.to(요소, 지속시간, 옵션(css속성:값))
@@ -130,4 +130,4 @@ floatingObject('.floating3', 1.5, 20);
 //     opacity: 1
 //   });
 // });
->>>>>>> 2fd8575 (qwqeqwe)
+// >>>>>>> 2fd8575 (qwqeqwe)
